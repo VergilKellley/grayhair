@@ -13,6 +13,7 @@ session_start();
 			<div class="main-wrapper">
 				<ul>
 					<li><a href="index.php">Home</a></li>
+					<li><a href="#blog">Blog</a></li>
 				</ul>
 				<div class="nav-login">
 					<?php
@@ -25,11 +26,11 @@ session_start();
 								<input type="text" name="uid" placeholder="Username/email">
 								<input type="password" name="pwd" placeholder="password">
 								<button type="submit" name="submit">Login</button>
-								</form>
-								<a href="signup.php">Sign Up</a>';
+								</form>';
 								echo '<form action="includes/logout.inc.php" method="POST">
 									<button type="submit" name="submit">Logout</button>
-									</form>';
+									</form>
+									<a href="signup.php">Sign Up</a>';
 							}
 					?>
 				</div>
