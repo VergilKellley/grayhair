@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
 	//Error handlers
 	//Check if inputs are empty
 	if (empty($uid) || empty($pwd)) {
-		header("Location: ../index.php?login=empty");
+		header("Location: ../about.php?login=empty");
 		exit();
 	} else {
 		$sql = "SELECT * FROM users WHERE user_uid='$uid' OR user_email='$uid'";
@@ -30,14 +30,13 @@ if (isset($_POST['submit'])) {
 					exit();
 				} elseif ($hashedPwdCheck == true) {
 					//log in the user here
-					$_Session['u_id'] = $row['user_id'];
-					$_Session['u_first'] = $row['user_first'];
-					$_Session['u_last'] = $row['user_last'];
-					$_Session['u_email'] = $row['user_email'];
-					$_Session['u_uid'] = $row['user_uid'];
-					header("Location: ../index.php?login=success");
+					$_SESSION['u_id'] = $row['user_id'];
+					$_SESSION['u_first'] = $row['user_first'];
+					$_SESSION['u_last'] = $row['user_last'];
+					$_SESSION['u_email'] = $row['user_email'];
+					$_SESSION['u_uid'] = $row['user_uid'];
+					header("Location: ../about.php?login=success");
 					exit();
-
 				}
 			}
 		}
