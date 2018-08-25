@@ -60,6 +60,17 @@
 			color: #fff;
 		}
 
+		#enter {
+			position: absolute;
+			color: #fff;
+			text-decoration: none;
+			top:75%;
+			left: 50%;
+			font-size: 2rem;
+			transform: translate(-50%, -50%);
+			z-index: 4;
+		}
+
 		#lp-overlay{
 			position: absolute;
 			background-color: rgba(0, 0, 0, 0.5);
@@ -298,8 +309,9 @@
 <body>
 			<div id="lp-overlay"></div>
 			<h3>National</h3>
-			<h1>Gray Hair</h1>
+			<h1>Gray Hair!</h1>
 			<p id="day">Day</p>
+			<a id="enter" href="about.php">enter</a>
 
 			<!---------------------------top section------------------------------>
 			<div id="wrapper">
