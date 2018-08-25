@@ -16,9 +16,12 @@ session_start();
 					<li><a href="#blog">Blog</a></li>
 				</ul>
 				<div class="nav-login">
+
 					<?php
 
-					
+					echo '<form action="includes/logout.inc.php" method="POST">
+									<button type="submit" name="submit">Logout</button>
+									</form>';
 						if (isset($_SESSION['u_id'])) {
 							
 						} else {
@@ -26,13 +29,11 @@ session_start();
 								<input type="text" name="uid" placeholder="Username/email">
 								<input type="password" name="pwd" placeholder="password">
 								<button type="submit" name="submit">Login</button>
-								</form>';
-								echo '<form action="includes/logout.inc.php" method="POST">
-									<button type="submit" name="submit">Logout</button>
-									</form>
-									<a href="signup.php">Sign Up</a>';
+								</form>
+								<a href="signup.php">Sign Up</a>';
 							}
 					?>
+					
 				</div>
 			</div>
 		</nav>
