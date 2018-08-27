@@ -28,16 +28,7 @@
         </div>
 
 
-
-     <!-- <div class="container-fluid" style="padding: 0;">
-        <div class="row">
-          <div class="col-sm-12">
-            <footer id="footer2">
-              <a href="">Vergil Kelley Web Design & Development &copy; 2018</a>
-            </footer>
-          </div>
-        </div>
-      </div>-->
-
-</body>
-</html>
+<?php
+  include_once 'footer.php';
+?>
+     
