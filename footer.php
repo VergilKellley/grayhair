@@ -1,9 +1,16 @@
 
 
+	<div id="footer-container">	
 		<footer>
-			<p><a id="footer" href="https://vergilkellley.github.io/" target="_blank">Vergil Kelley Web Design</a> &copy; 2018</p>
+			<p>Copyright &copy 2018 NATIONALGRAYHAIRDAY.com All rights reserved.</p>
+			
+
+			<a href="https://vergilkellley.github.io/" target="_blank">Site Designed & Developed by Vergil Kelley Web Development</a>
 		</footer>
+	</div>
+
+
+</body>
+</html> 
 	
 			
-</body>
-</html>
