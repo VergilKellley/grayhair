@@ -10,7 +10,7 @@ session_start();
 <body>
 	<header>
 		<nav>
-			<div id="home-blog">
+			<div>
 				<ul>
 					<li><a href="index.php">Home</a></li>
 					<li><a href="#blog">Blog</a></li>
